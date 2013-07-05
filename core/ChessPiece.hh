@@ -9,16 +9,18 @@ enum Colour
 
 class ChessPiece
 {
+protected:
     const char* name;
 
     int row, col;
     const Colour colour; // 0 - black; 1 - white
 public:
+     ChessPiece(const char* Name, Colour colour);
 
     const char* getName() const;
     virtual const char getIcon() const;
 
-    ChessPiece(const char* Name, Colour colour);
+    virtual bool movePiece(int Row, int Col) = 0;
 
 };
 

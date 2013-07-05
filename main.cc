@@ -19,6 +19,9 @@ int main()
     ChessGame *game = new ChessGame(*p1, *p2);
     game->Information();
 
+    game->update();
+    game->update();
+
     delete p1;
     delete p2;
     delete game;

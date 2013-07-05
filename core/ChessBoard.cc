@@ -52,7 +52,7 @@ void ChessBoard::Information()
 {
     for(int i = 0; i < 8; i++)
     {
-        cout << " | ";
+        cout << 8 - i << " | ";
         for(int j = 0; j < 8; j++)
         {
             if (field[i][j])
@@ -62,4 +62,29 @@ void ChessBoard::Information()
         }
         cout << endl;
     }
+    cout << "-----------------------------------" << endl;
+    cout << "+ | ";
+    for (int i = 0; i < 8; i++)
+    {
+        cout << (char)('a' + i) << " | ";
+    }
+    cout << endl;
 }
+
+bool ChessBoard::movePiece(char fromFile, int fromRow, char toFile, int toRow)
+{
+    int fromCol = fromFile - (int)'a';
+    cout << fromCol << endl;
+    int toCol = toFile - (int)'a';
+    cout << toCol << endl;
+    fromRow -= (int)'1';
+    toRow -= (int)'1';
+    if (field[fromRow][fromCol] && !field[toRow][toCol])
+    {
+        cout << "Valid" << endl;
+        return true;
+    }
+    cout << "Not valid" << endl;
+    return false;
+}
+

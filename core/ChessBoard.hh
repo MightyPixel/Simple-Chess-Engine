@@ -13,6 +13,8 @@ public:
     ~ChessBoard();
 
     void Information();
+    bool movePiece(char fromFile, int fromRow, char toFile, int toRow);
+
 
 };
 

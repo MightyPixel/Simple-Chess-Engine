@@ -7,14 +7,20 @@
 class ChessGame
 {
     Player const * whitePlayer;
-    Player const * blackPLayer;
+    Player const * blackPlayer;
 
     ChessBoard* board;
+    bool isOver;
+    int moveCount;
 public:
     ChessGame(const Player& p1, const Player& p2);
     ~ChessGame();
 
     void Information() const;
+    bool isGameOver() const;
+
+    void update();
+
 };
 
 #endif

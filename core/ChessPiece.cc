@@ -13,3 +13,5 @@ const char* ChessPiece::getName() const
 
 const char ChessPiece::getIcon() const
 {   return name[0]; }
+
+
