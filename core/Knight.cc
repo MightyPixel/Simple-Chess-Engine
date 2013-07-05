@@ -1,7 +1,7 @@
 #include "Knight.hh"
 
-Knight::Knight(Colour colour)
-    : ChessPiece("Knight", colour)
+Knight::Knight(Colour colour, int Row, int Col)
+    : ChessPiece("Knight", colour, Row, Col)
 {
 
 }

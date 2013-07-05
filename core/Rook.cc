@@ -1,7 +1,7 @@
 #include "Rook.hh"
 
-Rook::Rook(Colour colour)
-    : ChessPiece("Rook", colour)
+Rook::Rook(Colour colour, int Row, int Col)
+    : ChessPiece("Rook", colour, Row, Col)
 {
 
 }

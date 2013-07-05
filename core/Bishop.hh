@@ -6,7 +6,7 @@
 class Bishop : public ChessPiece
 {
 public:
-    Bishop(Colour colour);
+    Bishop(Colour colour, int Row, int Col);
 
 };
 

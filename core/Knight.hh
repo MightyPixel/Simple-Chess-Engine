@@ -6,7 +6,7 @@
 class Knight : public ChessPiece
 {
 public:
-    Knight(Colour colour);
+    Knight(Colour colour, int Row, int Col);
     const char getIcon() const;
 
 };

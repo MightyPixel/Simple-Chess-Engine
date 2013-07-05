@@ -7,7 +7,7 @@ class King : public ChessPiece
 {
 
 public:
-    King(Colour colour);
+    King(Colour colour, int Row, int Col);
 
 };
 

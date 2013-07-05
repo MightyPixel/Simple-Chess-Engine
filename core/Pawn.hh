@@ -6,7 +6,7 @@
 class Pawn : public ChessPiece
 {
 public:
-    Pawn(Colour colour);
+    Pawn(Colour colour, int Row, int Col);
     bool movePiece(int Row, int Col);
 
 };

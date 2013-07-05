@@ -25,7 +25,7 @@ class PieceFactory
     PieceFactory() {}
 public:
 
-    static ChessPiece* createPiece(PIECES piece, Colour colour);
+    static ChessPiece* createPiece(PIECES piece, Colour colour, int Row, int Col);
 };
 
 #endif

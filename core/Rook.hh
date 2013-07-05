@@ -6,7 +6,7 @@
 class Rook : public ChessPiece
 {
 public:
-    Rook(Colour colour);
+    Rook(Colour colour, int Row, int Col);
 
 };
 

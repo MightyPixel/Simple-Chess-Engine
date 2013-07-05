@@ -6,7 +6,7 @@
 class Queen : public ChessPiece
 {
 public:
-    Queen(Colour colour);
+    Queen(Colour colour, int Row, int Col);
 };
 
 
