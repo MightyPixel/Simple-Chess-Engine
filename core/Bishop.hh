@@ -7,6 +7,7 @@ class Bishop : public ChessPiece
 {
 public:
     Bishop(Colour colour, int Row, int Col);
+    virtual bool movePiece(int Row, int Col);
 
 };
 

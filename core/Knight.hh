@@ -7,7 +7,9 @@ class Knight : public ChessPiece
 {
 public:
     Knight(Colour colour, int Row, int Col);
-    const char getIcon() const;
+    char getIcon() const;
+
+    virtual bool movePiece(int Row, int Col);
 
 };
 
